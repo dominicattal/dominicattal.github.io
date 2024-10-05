@@ -8,7 +8,7 @@ const Home = () => {
     const {workouts, dispatch} = useWorkoutsContext()
 
     // fires once when component is rendered
-    // empty array is dependency array
+    // second argument is dependency array
     useEffect(() => {
         const fetchWorkouts = async () => {
             const response = await fetch("/api/workouts")
@@ -20,7 +20,7 @@ const Home = () => {
         }
         
         fetchWorkouts()
-    }, [])
+    }, [dispatch])
 
     return (
         <div className="home">
