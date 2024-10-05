@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react"
-
 import WorkoutDetails from "../components/WorkoutDetails"
+import WorkoutForm from "../components/WorkoutForm"
+import { useWorkoutsContext } from "../hooks/useWorkoutsContext"
+import { useEffect } from "react"
 
 const Home = () => {
 
-    // create local states for updating
-    const [workouts, setWorkouts] = useState(null)
+    const {workouts, dispatch} = useWorkoutsContext()
 
     // fires once when component is rendered
     // empty array is dependency array
@@ -15,7 +15,7 @@ const Home = () => {
             const json = await response.json()
 
             if (response.ok) {
-                setWorkouts(json)
+                dispatch({type: "SET_WORKOUTS", payload: json})
             }
         }
         
@@ -29,6 +29,7 @@ const Home = () => {
                     <WorkoutDetails key={workout._id} workout={workout} />
                 ))}    
             </div>
+            <WorkoutForm />
         </div>
     )
 }
