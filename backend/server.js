@@ -3,8 +3,11 @@ require("dotenv").config()
 const express = require("express")
 const mongoose = require("mongoose")
 const routes = require("./routes/workouts")
+const cors = require("cors")
 
 const app = express()
+
+app.use(cors())
 
 // For every request, look if it has a body
 app.use(express.json())
