@@ -18,6 +18,8 @@ function About() {
           </p>
         </div>
       </div>
+      <h1>Skills</h1>
+      <p>C, Python, etc</p>
       <Courses />
       <h1>Contact</h1>
       <p>Email: da526@njit.edu</p>

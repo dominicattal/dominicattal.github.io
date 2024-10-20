@@ -1,9 +1,10 @@
+import Leetcode
+ from "../components/Leetcode";
 function Projects() {
   return (
     <div className="container">
       <div className="row">
-        <h1>Leetcode</h1>
-        <p>My leetcode stats</p>
+        <Leetcode />
       </div>
       <div className="row">
         <h1>Project Euler</h1>
