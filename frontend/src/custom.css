@@ -1,0 +1,19 @@
+.btn-primary {
+  background-color: red;
+}
+
+.test {
+  background-color: teal;
+}
+
+.test2 {
+  background-color: orange;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+.logo {
+  width: 50px;
+}
