@@ -1,5 +1,6 @@
-import Leetcode
- from "../components/Leetcode";
+import Leetcode from "../components/Leetcode";
+import ProjectEuler from "../components/ProjectEuler";
+
 function Projects() {
   return (
     <div className="container">
@@ -7,11 +8,9 @@ function Projects() {
         <Leetcode />
       </div>
       <div className="row">
-        <h1>Project Euler</h1>
-        <p>My project euler stats</p>
-        <img src="https://projecteuler.net/profile/domick.png"></img>
+        <ProjectEuler />
       </div>
-      <div className="opengl">
+      <div className="row">
         <h1>OpenGL</h1>
         <p>Some stuff ive done</p>
       </div>
