@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand bg-body-tertiary">
       <div class="justify-content-center container-fluid">
         <div class="" id="navbarNav">
           <ul class="navbar-nav">
@@ -14,6 +14,9 @@ function Navbar() {
             </li>
             <li class="nav-item">
               <NavLink exact to="/projects" className="nav-link" activeClassName="active">Projects</NavLink>
+            </li>
+            <li class="nav-item">
+              <NavLink exact to="/contact" className="nav-link" activeClassName="active">Contact</NavLink>
             </li>
           </ul>
         </div>
