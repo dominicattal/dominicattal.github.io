@@ -1,9 +1,11 @@
+import Form from "../components/Form";
+
 function Contact() {
   return (
-    <div>
-      <p className="text-center">Email: da526@njit.edu</p>
-      <p className="text-center">LinkedIn: in/dominicattal/</p>
-      <p className="text-center">Github: https://github.com/dominicattal</p>
+    <div className="row justify-content-center mt-5">
+      <div className="col-lg-4">
+        <Form />
+      </div>
     </div>
   )
 }
