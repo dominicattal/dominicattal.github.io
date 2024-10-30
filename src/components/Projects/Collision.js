@@ -8,7 +8,7 @@ function Collision() {
           Graphical representation of quadtrees and spatial hashes. The program
           tells the user how many checks are saved with each algorithm.
         </p>
-        <a href="#" class="card-link">Source</a>
+        <a href="https://github.com/dominicattal/collision-algorithms" class="card-link">Source</a>
       </div>
     </div>
   )
