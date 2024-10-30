@@ -17,7 +17,6 @@ function Projects() {
       <Asteroids />
       <Minecraft />
       <Snake />
-      
       <DiscoBreak />
       <Collision />
       <Graph />
