@@ -1,6 +1,6 @@
 function Snake() {
   return (
-    <div className="card" style={{width: "18rem"}}>
+    <div className="card align-self-start" style={{width: "13rem"}}>
       <div className="card-body">
         <h5 className="card-title">Snake</h5>
         <p className="card-subtitle mb-2 text-body-secondary"><em>C, Git, OpenGL, GLFW</em></p>

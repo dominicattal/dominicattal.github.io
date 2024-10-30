@@ -17,14 +17,15 @@ function Projects() {
       <Asteroids />
       <Minecraft />
       <Snake />
-      <ProjectEuler />
-      <Leetcode />
+      
       <DiscoBreak />
       <Collision />
       <Graph />
       <PerlinNoise />
-      <Soultaker />
       <Pong />
+      <Soultaker />
+      <ProjectEuler />
+      <Leetcode />
     </div>
   )
 }

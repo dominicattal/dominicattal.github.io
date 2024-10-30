@@ -1,6 +1,6 @@
 function Leetcode() {
   return (
-    <div className="card" style={{ width: "18rem"}}>
+    <div className="card align-self-start" style={{ width: "15.5rem"}}>
       <div className="card-body">
         <h5 className="card-title">Leetcode</h5>
         <p className="card-subtitle mb-2 text-body-secondary"><em>Python</em></p>
