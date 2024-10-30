@@ -3,7 +3,7 @@ function Skills () {
     <div className="container-fluid">
       <h4>Skills</h4>
       <div className="row">
-        <div className="col-2">
+        <div className="col-lg-2">
           C/C++
         </div>
         <div className="col d-flex align-items-center">
@@ -15,7 +15,7 @@ function Skills () {
         </div>
       </div>
       <div className="row">
-        <div className="col-2">
+        <div className="col-lg-2">
           Python
         </div>
         <div className="col d-flex align-items-center">
@@ -27,7 +27,7 @@ function Skills () {
         </div>
       </div>
       <div className="row">
-        <div className="col-2">
+        <div className="col-lg-2">
           HTML/CSS
         </div>
         <div className="col d-flex align-items-center">
@@ -39,7 +39,7 @@ function Skills () {
         </div>
       </div>
       <div className="row">
-        <div className="col-2">
+        <div className="col-lg-2">
           Javascript
         </div>
         <div className="col d-flex align-items-center">
@@ -51,7 +51,7 @@ function Skills () {
         </div>
       </div>
       <div className="row">
-        <div className="col-2">
+        <div className="col-lg-2">
           SQL
         </div>
         <div className="col d-flex align-items-center">
@@ -63,7 +63,7 @@ function Skills () {
         </div>
       </div>
       <div className="row">
-        <div className="col-2">
+        <div className="col-lg-2">
           PHP
         </div>
         <div className="col d-flex align-items-center">
@@ -75,7 +75,7 @@ function Skills () {
         </div>
       </div>
       <div className="row">
-        <div className="col-2">
+        <div className="col-lg-2">
           Bash
         </div>
         <div className="col d-flex align-items-center">
@@ -87,7 +87,7 @@ function Skills () {
         </div>
       </div>
       <div className="row">
-        <div className="col-2">
+        <div className="col-lg-2">
           Java
         </div>
         <div className="col d-flex align-items-center">
@@ -100,7 +100,7 @@ function Skills () {
       </div>
       <hr />
       <div className="row">
-        <div className="col-2">
+        <div className="col-lg-2">
           OpenGL
         </div>
         <div className="col d-flex align-items-center">
@@ -112,7 +112,7 @@ function Skills () {
         </div>
       </div>
       <div className="row">
-        <div className="col-2">
+        <div className="col-lg-2">
           GLFW
         </div>
         <div className="col d-flex align-items-center">
@@ -124,7 +124,7 @@ function Skills () {
         </div>
       </div>
       <div className="row">
-        <div className="col-2">
+        <div className="col-lg-2">
           Git
         </div>
         <div className="col d-flex align-items-center">
@@ -136,7 +136,7 @@ function Skills () {
         </div>
       </div>
       <div className="row">
-        <div className="col-2">
+        <div className="col-lg-2">
           Node.js
         </div>
         <div className="col d-flex align-items-center">

@@ -33,18 +33,18 @@ function Courses() {
           <button class="nav-link py-0" id="v-pills-cs356-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cs356" type="button" role="tab" aria-controls="v-pills-cs356" aria-selected="false">CS356</button>
         </div>
         <div class="tab-content" id="v-pills-tabContent">
-          <div class="tab-pane fade show active" id="v-pills-it101" role="tabpanel" aria-labelledby="v-pills-it101-tab" tabindex="0">{it101}</div>
-          <div class="tab-pane fade" id="v-pills-cs100" role="tabpanel" aria-labelledby="v-pills-cs100-tab" tabindex="0">{cs100}</div>
-          <div class="tab-pane fade" id="v-pills-cs113" role="tabpanel" aria-labelledby="v-pills-cs113-tab" tabindex="0">{cs113}</div>
-          <div class="tab-pane fade" id="v-pills-cs114" role="tabpanel" aria-labelledby="v-pills-cs114-tab" tabindex="0">{cs114}</div>
-          <div class="tab-pane fade" id="v-pills-cs241" role="tabpanel" aria-labelledby="v-pills-cs241-tab" tabindex="0">{cs241}</div>
-          <div class="tab-pane fade" id="v-pills-cs280" role="tabpanel" aria-labelledby="v-pills-cs280-tab" tabindex="0">{cs280}</div>
-          <div class="tab-pane fade" id="v-pills-cs288" role="tabpanel" aria-labelledby="v-pills-cs288-tab" tabindex="0">{cs288}</div>
-          <div class="tab-pane fade" id="v-pills-cs301" role="tabpanel" aria-labelledby="v-pills-cs301-tab" tabindex="0">{cs301}</div>
-          <div class="tab-pane fade" id="v-pills-cs331" role="tabpanel" aria-labelledby="v-pills-cs331-tab" tabindex="0">{cs331}</div>
-          <div class="tab-pane fade" id="v-pills-cs332" role="tabpanel" aria-labelledby="v-pills-cs332-tab" tabindex="0">{cs332}</div>
-          <div class="tab-pane fade" id="v-pills-cs341" role="tabpanel" aria-labelledby="v-pills-cs341-tab" tabindex="0">{cs341}</div>
-          <div class="tab-pane fade" id="v-pills-cs356" role="tabpanel" aria-labelledby="v-pills-cs356-tab" tabindex="0">{cs356}</div>
+          <div class="tab-pane fade show active" id="v-pills-it101" role="tabpanel" aria-labelledby="v-pills-it101-tab" tabindex="0"><h5>Introduction to Information Technology</h5>{it101}</div>
+          <div class="tab-pane fade" id="v-pills-cs100" role="tabpanel" aria-labelledby="v-pills-cs100-tab" tabindex="0"><h5>Roadmap to Computing</h5>{cs100}</div>
+          <div class="tab-pane fade" id="v-pills-cs113" role="tabpanel" aria-labelledby="v-pills-cs113-tab" tabindex="0"><h5>Introduction to Computer Science I</h5>{cs113}</div>
+          <div class="tab-pane fade" id="v-pills-cs114" role="tabpanel" aria-labelledby="v-pills-cs114-tab" tabindex="0"><h5>Introduction to Computer Science II</h5>{cs114}</div>
+          <div class="tab-pane fade" id="v-pills-cs241" role="tabpanel" aria-labelledby="v-pills-cs241-tab" tabindex="0"><h5>Foundations of Computer Science I</h5>{cs241}</div>
+          <div class="tab-pane fade" id="v-pills-cs280" role="tabpanel" aria-labelledby="v-pills-cs280-tab" tabindex="0"><h5>Programming Language Concepts</h5>{cs280}</div>
+          <div class="tab-pane fade" id="v-pills-cs288" role="tabpanel" aria-labelledby="v-pills-cs288-tab" tabindex="0"><h5>Intensive Programming in Linux</h5>{cs288}</div>
+          <div class="tab-pane fade" id="v-pills-cs301" role="tabpanel" aria-labelledby="v-pills-cs301-tab" tabindex="0"><h5>Introduction to Data Science</h5>{cs301}</div>
+          <div class="tab-pane fade" id="v-pills-cs331" role="tabpanel" aria-labelledby="v-pills-cs331-tab" tabindex="0"><h5>Database System Design & Managament</h5>{cs331}</div>
+          <div class="tab-pane fade" id="v-pills-cs332" role="tabpanel" aria-labelledby="v-pills-cs332-tab" tabindex="0"><h5>Principles of Operating Systems</h5>{cs332}</div>
+          <div class="tab-pane fade" id="v-pills-cs341" role="tabpanel" aria-labelledby="v-pills-cs341-tab" tabindex="0"><h5>Foundations of Computer Science II</h5>{cs341}</div>
+          <div class="tab-pane fade" id="v-pills-cs356" role="tabpanel" aria-labelledby="v-pills-cs356-tab" tabindex="0"><h5>Introduction to Computer Networks</h5>{cs356}</div>
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@ function Form() {
           <input className="form-control" type="email" name="email" placeholder="Email" required />
         </div>
         <div className="form-group mb-2">
-          <textarea className="form-control" name="message" placeholder="Message" required></textarea>
+          <textarea className="form-control" name="message" placeholder="Message" style={{ maxHeight: "400px" }} required></textarea>
         </div>
         <input type="checkbox" name="botcheck" class="hidden" style={{ display: "none" }} />
         <button type="submit">Submit Form</button>
