@@ -13,6 +13,7 @@ function Home() {
         <div className="col-4 text-center">
           <a href="https://github.com/dominicattal"><img className="logo img-fluid me-3" src="github-mark.png" /></a>
           <a href="https://www.linkedin.com/in/dominicattal/"><img className="logo img-fluid me-3" src="linkedin.png" /></a>
+          <a href="mailto: da526@njit.edu"><img className="logo img-fluid me-3" src="gmail.png" /></a>
         </div>
       </div>
     </div>
