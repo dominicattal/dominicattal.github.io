@@ -10,6 +10,7 @@ import PerlinNoise from "../components/Projects/PerlinNoise";
 import Soultaker from "../components/Projects/Soultaker";
 import Pong from "../components/Projects/Pong";
 import Leetcode from "../components/Projects/Leetcode";
+import Parser from "../components/Projects/Parser";
 
 function Projects() {
   return (
@@ -22,6 +23,7 @@ function Projects() {
       <Graph />
       <PerlinNoise />
       <Pong />
+      <Parser />
       <Soultaker />
       <ProjectEuler />
       <Leetcode />
