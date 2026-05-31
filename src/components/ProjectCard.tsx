@@ -2,9 +2,9 @@ type ProjectCardProps = {
   title: string;
   bullet_points: string[];
   keywords: string[];
-  demo: string;
-  route: string;
-  github: string;
+  demo?: string;
+  route?: string;
+  github?: string;
 };
 
 export default function ProjectCard({
@@ -16,45 +16,47 @@ export default function ProjectCard({
   github,
 }: ProjectCardProps) {
   return (
-    <div className="rounded-xl border border-neutral-400 p-6">
+    <div className="rounded-xl border border-neutral-400 bg-neutral-800 p-6 my-5">
 
-      <h3 className="mb-2 text-xl font-semibold">
+      <h3 className="mb-2 text-2xl font-semibold">
         {title}
       </h3>
 
-      <pre>
+      <div className="flex mb-2">
         {Array.isArray(keywords) &&
           keywords.map((tech, index) => (
-            <span key={tech}>
-              {tech}{index < keywords.length - 1 ? " | " : ""}
+            <span className="rounded-md bg-neutral-600 px-2 py-1 text-sm mx-1" key={tech}>
+              {tech}
             </span>
           ))
         }
-      </pre>
+      </div>
 
-      {Array.isArray(bullet_points) &&
-        bullet_points.map((point) => (
-          <p>
-            {point}
-          </p>
-        ))
-      }
+      <ul className="list-disc pl-5 mb-2">
+        {Array.isArray(bullet_points) &&
+          bullet_points.map((point, index) => (
+            <li key={index} className="mb-2">
+              {point}
+            </li>
+          ))
+        }
+      </ul>
 
       <div className="flex gap-4">
         {route && (
-          <a href={route}>
+          <a>
             Info
           </a>
         )}
 
         {github && (
-          <a href={github}>
+          <a target="_blank" rel="noopener noreferrer" className="lex items-center gap-2 text-zinc-400 hover:text-white" href={github}>
             Github
           </a>
         )}
 
         {demo && (
-          <a href={demo}>
+          <a target="_blank" rel="noopener noreferrer" href={demo}>
             Demo
           </a>
         )}
