@@ -22,13 +22,16 @@ export default function ProjectCard({
   return (
     <div className="rounded-xl border w-11/12 mx-auto max-w-4xl border-neutral-400 bg-neutral-800 p-6 my-5">
 
-      <h3 className="mb-2 text-2xl font-semibold">
+      <h3
+        className="mb-2 text-2xl font-semibold cursor-pointer"
+        onClick={() => setExpanded(!expanded)}
+      >
         {title}
       </h3>
 
-      <div className="flex mb-2">
+      <div className="flex flex-wrap mb-2 gap-2">
         {Array.isArray(keywords) &&
-          keywords.map((tech, index) => (
+          keywords.map((tech) => (
             <span className="rounded-md bg-neutral-600 px-2 py-1 text-sm mx-1" key={tech}>
               {tech}
             </span>
@@ -58,19 +61,19 @@ export default function ProjectCard({
 
         <div className="flex gap-6">
           {github && (
-            <a target="_blank" rel="noopener noreferrer" className="flex rounded-l items-center text-zinc-400 hover:text-white" href={github}>
+            <a target="_blank" rel="noopener noreferrer" className="flex rounded-l items-center text-neutral-400 hover:text-white rounded-md border px-3 py-1" href={github}>
               Source
             </a>
           )}
 
           {route && (
-            <a className="flex items-center text-zinc-400 hover:text-white">
+            <a className="flex rounded-l items-center text-neutral-400 hover:text-white rounded-md border px-3 py-1">
               Info
             </a>
           )}
 
           {demo && (
-            <a target="_blank" rel="noopener noreferrer" className="flex items-center text-zinc-400 hover:text-white" href={demo}>
+            <a target="_blank" rel="noopener noreferrer" className="flex rounded-l items-center text-neutral-400 hover:text-white rounded-md border px-3 py-1" href={demo}>
               Demo
             </a>
           )}

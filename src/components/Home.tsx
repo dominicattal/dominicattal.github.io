@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-neutral-600 text-white">
       <section className="flex flex-col md:flex-row min-h-screen px-8 h-screen">
-        <div className="flex flex-1 items-center">
+        <div className="flex md:flex-1 pb-1 md:pb-0 items-center">
           <div className="mx-auto max-w-4xl">
             <h1 className="text-center md:text-left mt-4 mb-4 text-4xl font-bold tracking-tight md:text-6xl">
               Dominic Attalienti
@@ -18,7 +18,7 @@ export default function Home() {
               Recent college graduate interested in creating good software
             </h2>
 
-            <div className="flex justify-center md:justify-start gap-2">
+            <div className="justify-center md:justify-start gap-2 hidden md:flex">
               <GithubButton />
               <LinkedinButton />
             </div>
@@ -32,7 +32,7 @@ export default function Home() {
               keywords={["GCP", "C#", ".NET", "Visual Studio", "Unity"]}
               bullet_points={[
                 "Worked in an interdisciplinary Agile team to connect an Arduino RP2040 microcontroller to a Unity scene running on the Meta Quest 3 virtual reality headset over Bluetooth Low Energy.",
-                "Created a data logger that asynchronously copies and sends Meta Quest 3 headset data and Arduino RP2040 IMU data to the Cloud (GCP), facilitating later data analysis",
+                "Created a data logger that asynchronously copies and sends Meta Quest 3 headset data and Arduino RP2040 IMU data to the Cloud (GCP), facilitating later data analysis.",
                 "Implemented Figma designs from another team in Unity by using Meta Quest 3 prefabs and TextMesh Pro, creating a seamless UI experience in VR."
               ]}
             />
@@ -40,14 +40,12 @@ export default function Home() {
               title="Internet Movie Database Platform"
               keywords={["HTML & CSS", "Javascript", "MySQL", "PHP", "RabbitMQ", "Linux", "Apache", "OracleBox"]}
               bullet_points={[
-                "Worked in an Agile team to develop a movie web application using PHP, MySQL, HTML, CSS, and JavaScript for browsing and reviewing movies .",
+                "Worked in an Agile team to develop a movie web application using PHP, MySQL, HTML, CSS, and JavaScript for browsing and reviewing movies.",
                 "Created a distributed logging system with RabbitMQ managed by systemd for a cluster of virtual machines, isolating the frontend from the database queries.",
                 "Implemented API response caching to reduce external requests and improve backend performance.",
                 "Wrote Bash scripts to automate virtual machine configuration to accelerate development workflow."
               ]}
               github="https://github.com/dominicattal/rabbitmqphp_example"
-              route="/test"
-              demo="hello"
             />
             <ProjectCard
               title="GPU-Accelerated Machine Learning Model"
@@ -137,7 +135,7 @@ export default function Home() {
               github="https://github.com/dominicattal/ai-model-analysis"
             />
             <ProjectCard
-              title="History Research Project"
+              title="History Research Report"
               keywords={["Python", "MS Word", "MS Excel"]}
               bullet_points={[
                 "Conducted original research on an organization’s treasury reports from the 1950s-1970s.",
