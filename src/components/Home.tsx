@@ -46,6 +46,8 @@ export default function Home() {
                 "Wrote Bash scripts to automate virtual machine configuration to accelerate development workflow."
               ]}
               github="https://github.com/dominicattal/rabbitmqphp_example"
+              route="/test"
+              demo="hello"
             />
             <ProjectCard
               title="GPU-Accelerated Machine Learning Model"

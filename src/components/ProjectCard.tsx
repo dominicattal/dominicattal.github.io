@@ -1,3 +1,6 @@
+import { useState } from "react";
+import { BiChevronDown } from "react-icons/bi";
+
 type ProjectCardProps = {
   title: string;
   bullet_points: string[];
@@ -15,8 +18,9 @@ export default function ProjectCard({
   route,
   github,
 }: ProjectCardProps) {
+  const [expanded, setExpanded] = useState(false);
   return (
-    <div className="rounded-xl border border-neutral-400 bg-neutral-800 p-6 my-5">
+    <div className="rounded-xl border w-11/12 mx-auto max-w-4xl border-neutral-400 bg-neutral-800 p-6 my-5">
 
       <h3 className="mb-2 text-2xl font-semibold">
         {title}
@@ -32,7 +36,7 @@ export default function ProjectCard({
         }
       </div>
 
-      <ul className="list-disc pl-5 mb-2">
+      <ul className={`list-disc pl-5 mb-2 overflow-hidden transition-all duration-300 ${expanded ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>
         {Array.isArray(bullet_points) &&
           bullet_points.map((point, index) => (
             <li key={index} className="mb-2">
@@ -42,24 +46,35 @@ export default function ProjectCard({
         }
       </ul>
 
-      <div className="flex gap-4">
-        {route && (
-          <a>
-            Info
-          </a>
-        )}
+      <div className="flex">
+        <button
+          onClick={() => setExpanded(!expanded)}
+          className="mr-5"
+        >
+          <BiChevronDown
+            className={`h-8 w-8 transition-transform duration-300 ${expanded ? "rotate-180" : ""}`}
+          />
+        </button>
 
-        {github && (
-          <a target="_blank" rel="noopener noreferrer" className="lex items-center gap-2 text-zinc-400 hover:text-white" href={github}>
-            Github
-          </a>
-        )}
+        <div className="flex gap-6">
+          {github && (
+            <a target="_blank" rel="noopener noreferrer" className="flex rounded-l items-center text-zinc-400 hover:text-white" href={github}>
+              Source
+            </a>
+          )}
 
-        {demo && (
-          <a target="_blank" rel="noopener noreferrer" href={demo}>
-            Demo
-          </a>
-        )}
+          {route && (
+            <a className="flex items-center text-zinc-400 hover:text-white">
+              Info
+            </a>
+          )}
+
+          {demo && (
+            <a target="_blank" rel="noopener noreferrer" className="flex items-center text-zinc-400 hover:text-white" href={demo}>
+              Demo
+            </a>
+          )}
+        </div>
       </div>
     </div>
   )
