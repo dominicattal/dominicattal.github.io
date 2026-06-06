@@ -18,9 +18,24 @@ export default function Home() {
               Recent college graduate interested in creating good software
             </h2>
 
-            <div className="justify-center md:justify-start gap-2 hidden md:flex">
+            <div className="gap-2 hidden items-center md:flex mb-3">
               <GithubButton />
+              <a 
+                className="items-center"
+                href="https://github.com/dominicattal"
+              >
+                Github
+              </a>
+            </div>
+
+            <div className="gap-2 hidden items-center md:flex">
               <LinkedinButton />
+              <a 
+                className="items-center"
+                href="https://www.linkedin.com/in/dominicattal/"
+              >
+                LinkedIn
+              </a>
             </div>
 
           </div>
@@ -49,17 +64,17 @@ export default function Home() {
             />
             <ProjectCard
               title="GPU-Accelerated Machine Learning Model"
-              keywords={["C", "OpenCL", "Python"]}
+              keywords={["C", "OpenCL", "Python", "Linux"]}
               bullet_points={[
                 "Prototyped a Variational Autoencoder in Python using PyTorch and developed a GPU-accelerated C/OpenCL implementation to improve computational efficiency.",
                 "Optimized compute-intensive workloads using OpenCL kernels and low-level memory management techniques for parallel GPU execution.",
                 "Used GDB and Valgrind on Linux to diagnose memory leaks, invalid memory access, and runtime errors during low-level systems debugging."
               ]}
-              github="github.com/dominicattal/opencl"
+              github="https://github.com/dominicattal/opencl/tree/main/vae"
             />
             <ProjectCard
               title="Competitive Programming Platform"
-              keywords={["HTML & CSS", "Javascript", "PHP", "C", "SQLite"]}
+              keywords={["HTML & CSS", "Javascript", "PHP", "C", "SQLite", "Linux"]}
               bullet_points={[
                 "Prototyped a Variational Autoencoder in Python using PyTorch and developed a GPU-accelerated C/OpenCL implementation to improve computational efficiency.",
                 "Optimized run handling using multi-threading, improving backend efficiency.",
@@ -70,7 +85,7 @@ export default function Home() {
             />
             <ProjectCard
               title="Multithreaded Game Engine"
-              keywords={["C", "OpenGL", "GLFW"]}
+              keywords={["C", "OpenGL", "GLFW", "Linux"]}
               bullet_points={[
                 "Developed a multithreaded game engine in C using OpenGL for users to create levels based on a popular game.",
                 "Separated rendering and game logic into parallel threads to improve frame consistency and runtime responsiveness.",
@@ -80,7 +95,7 @@ export default function Home() {
             />
             <ProjectCard
               title="Multithreaded Voxel Renderer"
-              keywords={["C", "OpenMP", "OpenGL", "GLFW"]}
+              keywords={["C", "OpenMP", "OpenGL", "GLFW", "Linux"]}
               bullet_points={[
                 "Developed a high-performance 3D voxel renderer in C using OpenGL featuring procedurally generated randomized terrain and real-time rendering pipelines.",
                 "Parallelized terrain generation workloads with OpenMP to reduce chunk generation latency and improve runtime performance."
